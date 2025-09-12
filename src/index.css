@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300;
+  }
+  
+  .card {
+    @apply bg-gray-800 rounded-xl p-6 shadow-xl border border-gray-700 hover:border-neon-blue transition-all duration-300;
+  }
+  
+  .neon-glow {
+    @apply shadow-lg;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  }
+  
+  .live-indicator {
+    @apply bg-red-500 text-white text-xs px-2 py-1 rounded-full animate-pulse;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #00ff88, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
